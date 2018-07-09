@@ -1,0 +1,9 @@
+[project]
+name = jleung
+
+[servers.ghpages]
+name = Prod
+enabled = yes
+default = yes
+target = ghpages://johannesleung/johannesleung.github.io
+
