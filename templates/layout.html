@@ -3,7 +3,7 @@
 <!--<link rel="stylesheet" href="{{ '/static/style.css'|url }}">-->
 <title>{% block title %}Welcome{% endblock %} — jleung</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+<link rel="stylesheet" href="{{ '/static/tachyons.min.css'|url }}">
 <body>
   <header class="bg-white black-80 tc pv4 avenir">
     <a href="" class="bg-black-80 ba b--black dib pa3 w2 h2 br-100">
@@ -11,17 +11,32 @@
     <h1 class="mt2 mb0 baskerville i fw1 f1">Johannes S. Leung</h1>
     <h2 class="mt2 mb0 f6 fw4 ttu tracked">Pianist</h2>
     <nav class="bt bb tc mw7 center mt4">
-      <a class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" href="/">Portrait</a>
-      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="/konzerte">Konzerte</a>
-      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" href="/hoerproben">Hörproben</a>
-      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pa3 ph4-l" href="/unterricht">Unterricht</a>
-      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l" href="/cds">CDs</a>
+      <a class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l"
+	      href="/">Biographie</a>
+      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l"
+	      href="/konzerte">Konzerte</a>
+      <a class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l"
+	      href="/hoerproben">Hörproben</a>
+      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pa3 ph4-l"
+	      href="/pressestimmen">Pressestimmen</a>
+      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l"
+	      href="/unterricht">Unterricht</a>
+      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-gray dib pa3 ph4-l"
+	      href="/kompositionen">Kompositionen</a>
+      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-yellow dib pa3 ph4-l"
+	      href="/cds">CDs</a>
+      <a class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l"
+	      href="/kontakt">Kontakt</a>
     </nav>
   </header>
   <div class="pa4 ph7-l georgia mw9-l center f5 f4-ns lh-copy measure mb4">
     {% block body %}{% endblock %}
   </div>
   <footer class="bg-white black-80 tc pv4 avenir">
-    &copy; Copyright 2018 Johannes S. Leung
+	  &copy; Copyright 2018 Johannes S. Leung · <a href="/impressum">Impressum</a>
   </footer>
+
+  <script src="{{ '/static/jquery-3.3.1.min.js'|url }}"></script>
+  <script src="{{ '/static/exclusive-audio.js'|url }}"></script>
+
 </body>
