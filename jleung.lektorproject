@@ -1,6 +1,16 @@
 [project]
 name = jleung
 
+[alternatives.de]
+name = Deutsch
+primary = yes
+locale = de
+
+[alternatives.en]
+name = Englisch
+url_prefix = /en/
+locale = en
+
 [servers.ghpages]
 name = Prod
 enabled = yes
