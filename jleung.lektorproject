@@ -15,6 +15,5 @@ locale = en
 name = Prod
 enabled = yes
 default = yes
-#target = ghpages://johannesleung/johannesleung.github.io?cname=johannesleung.de
-target = ghpages://johannesleung/johannesleung.github.io
+target = ghpages://johannesleung/johannesleung.github.io?cname=johannesleung.de
 
